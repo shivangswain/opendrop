@@ -13,8 +13,8 @@
 		"build": "yarn workspaces foreach -pv run build",
 		"test": "yarn workspaces foreach run test",
 		"eject": "yarn workspaces foreach run eject",
-		"client": "yarn workspace @opendrop/client run start",
-		"server": "yarn workspace @opendrop/server run build"
+		"client": "yarn workspace @opendrop/client run build",
+		"server": "yarn workspace @opendrop/server run build && yarn workspace @opendrop/server run start"
 	},
 	"packageManager": "yarn@3.1.0"
 }
