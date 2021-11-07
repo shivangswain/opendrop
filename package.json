@@ -1,0 +1,18 @@
+{
+	"name": "opendrop",
+	"version": "1.0.0",
+	"private": true,
+	"main": "index.js",
+	"license": "MIT",
+	"workspaces": [
+		"client",
+		"server"
+	],
+	"scripts": {
+		"start": "yarn workspace @opendrop/server run build && yarn workspaces foreach -pv run start",
+		"build": "yarn workspaces foreach -pv run build",
+		"test": "yarn workspaces foreach run test",
+		"eject": "yarn workspaces foreach run eject"
+	},
+	"packageManager": "yarn@3.1.0"
+}
